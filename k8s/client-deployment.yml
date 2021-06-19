@@ -14,7 +14,7 @@ spec:
     spec:
       containers: 
         - name: client
-          image: sregor/fiboapp-client
+          image: sregor/fiboappmultiapp-client
           ports: 
             - containerPort: 3000 
 
