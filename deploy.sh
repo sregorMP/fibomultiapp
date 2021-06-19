@@ -11,6 +11,6 @@ docker push sregor/fibomultiapp-server:$SHA
 docker push sregor/fibomultiapp-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/client-deployment client=sregor/multi-client:$SHA
-kubectl set image deployments/server-deployment server=sregor/multi-server:$SHA
-kubectl set image deployments/worker-deployment client=sregor/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=sregor/fibomultiapp-client:$SHA
+kubectl set image deployments/server-deployment server=sregor/fibomultiapp-server:$SHA
+kubectl set image deployments/worker-deployment worker=sregor/fibomultiapp-worker:$SHA
